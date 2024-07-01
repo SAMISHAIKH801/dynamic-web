@@ -1,0 +1,19 @@
+
+
+.commentbox{
+    border: 2px solid black;
+    width: 50%;
+    border-radius: 12px;
+    margin: 1rem;
+
+}
+
+
+.card-post{
+    border: 2px solid black;
+    width: 50%;
+    margin: 11px;
+    padding: 20px;
+    border-radius: 13px;
+    
+}

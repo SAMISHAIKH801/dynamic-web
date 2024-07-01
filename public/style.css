@@ -1,0 +1,257 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+}
+html, body {
+    overflow-x: hidden; /* Right-left scrolling ko eliminate karne ke liye */
+}
+
+section{
+    padding: 5px;
+    margin-top: 50px;
+}
+
+:root {
+    --primary-color: ##f5f5f5;
+    /* --secondary-color: #2ecc71;
+    --accent-color: #e74c3c;
+    --text-color: #333;
+    --background-color: #f4f4f4; */
+}
+
+.collapse {
+    justify-content: space-evenly;
+}
+.collapse ul {
+    margin: 0px 200px;
+}
+.collapse ul li  {
+    padding: 0px 30px
+}
+.collapse ul li a {
+    font-size: 20px;
+}
+
+
+/* .container-fluid form input{
+    width: 18% !important;
+} */
+
+.container-fluid {
+    height: 11vh;
+}
+.container-fluid .navbar-brand img{
+    width: 100%;
+    height: 35vh;
+}
+
+
+.itemsec{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 60px;
+    padding: 20px 6px 16px 12px;
+    margin: 65px 0px; 
+    
+}
+
+.itemsec .item{
+    /* display: flex;
+    flex-direction: column;
+    width: 10%; */
+    border: 2px solid black;
+    width: 10%;
+    height: 25vh;
+    text-align: center;
+   
+}
+.itemsec .item img{
+    width: 100%;
+    height: 17vh;
+}
+.itemsec button{
+    /* border: none;
+    padding: 8px;
+    background: purple;
+    margin: 8px 21px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 4px; */
+    margin: 8px;
+    width: 84%;
+    border: none;
+    padding: 5px 5px;
+    background-color: aquamarine;
+    border-radius: 8px;
+
+    /* font-size: 6px; */
+
+}
+
+ /* --------- new products section------------ */
+
+ .newprodbox h1{
+        text-align: center;
+ }
+ .newprodbox p{
+        text-align: center;
+ }
+
+
+
+.product-items{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 11px;
+
+
+}
+
+
+.card-post{
+   border: 2px solid black;
+    width: 20%;
+    height: auto;
+    padding: 20px;
+    border-radius: 13px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22); /* Add this line */
+
+    /* margin: 35px; */
+}
+.card-post h2{
+  text-align: center;
+  font-weight: 800;
+}
+.card-post h4{
+  text-align: center;
+  font-weight: 800;
+
+}
+.card-post p{
+    text-align: center;
+    color: gray;
+}
+
+.star-rating {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.star {
+    font-size: 50px;
+    color: black;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.star:hover, .star.active {
+    color: yellow;
+}
+
+
+    /* -------- sales box ----------- */
+.salesBox .heading{
+     text-align: center;
+    font-size: 60px;
+    font-weight: 700;
+    margin: 25px;
+}
+.salesBox .imgcontent{
+    content: "";
+    background: url(./assets/fashion-look-white-bold-lines-260nw-594736502.jpg);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 50vh;
+
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+.salesBox .imgcontent h1{
+    font-size: 55px;
+    text-shadow: 2px 6px 1px black;
+}
+.salesBox .imgcontent h1 span{
+    color: #ff4900;
+
+}
+.salesBox .imgcontent .salesbtn{
+    padding: 10px 21px;
+    font-size: 21px;
+    font-weight: 500;
+    border-radius: 7px;
+}
+.salesBox .imgcontent .salesbtn:hover{
+   background-color: #ff4900;
+   transition: all 0.9s;
+}
+
+
+
+
+@media (max-width: 1440px) {
+   
+    .itemsec .item {
+        width: 10;
+        height: 30vh;
+    }
+}
+
+@media (max-width: 1024px) {
+   
+    .itemsec .item {
+        width: 13%;
+    }
+    .itemsec .item button {
+        font-size: 13px;   
+     }
+}
+
+@media (max-width: 768px) {
+   
+    .itemsec .item {
+        width: 17%;
+    }
+   
+    .itemsec  {
+       gap: 24px;
+
+    }
+    
+}
+@media (max-width: 425px) {
+   
+    .itemsec .item {
+        width: 32%;
+        }
+   
+    
+    
+}
+@media (max-width: 320px) {
+   
+    .itemsec .item {
+        width: 43%;
+        }
+   
+    
+    
+}

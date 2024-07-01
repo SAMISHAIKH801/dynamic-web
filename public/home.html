@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body onload="getAllPost()">
+    <h1>Crud App</h1>
+    <form onsubmit="createPost(); return false">
+        <label for="postTitle">Title</label>
+        <input type="text" name="postTitle" id="postTitle" placeholder="Title" />
+        <br />
+        <label for="postText">Text</label>
+        <input type="text" name="postText" id="postText" placeholder="some text" />
+        <br />
+        <label for="postPrice">Price</label>
+        <input type="text" name="postPrice" id="postPrice" placeholder="price" />
+        <br />
+
+        <button type="submit">Post</button>
+    </form>
+    <!-- Agr tuna div ko class de ha to queryselector sa # sa q target kar raha ha -->
+    <div id="result"></div>
+    <br>
+    <div id="posts"></div>
+
+
+   
+
+            <!-- <div class="commentbox">
+            <h2 class="commentName">Shaikh</h2>
+            <p class="commentText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. inventore officia aliquam beatae eos accusantium.</p>
+
+        </div> -->
+        
+    <!-- </div> -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script type="module" src="./app.mjs"></script>
+
+    <script type="module">
+        // window.getWeather = function () {
+
+        //     let cityName = document.querySelector("#cityName").value;
+
+        //     axios
+        //         .get(`/weather/${cityName}`)
+        //         .then(function (response) {
+        //             console.log(response.data);
+        //             document.querySelector(".result").innerHTML =
+        //                 `Current temperature is ${response.data.tempInC}°C`;
+        //         })
+        //         .catch(function (error) {
+        //             console.log(error.response.data);
+        //             document.querySelector(".result").innerHTML =
+        //                 "Error in getting weather data";
+        //         });
+        // };
+
+        // document.querySelector('#postComment').addEventListener('submit', async (e) => {
+        //     e.preventDefault()
+
+        //     let nameInput = document.querySelector("#nameInput").value;
+        //     let commentInput = document.querySelector("#commentInput").value;
+
+
+        //     try {
+
+        //         const axiosResponse = await axios
+        //             .post(`/comment/${nameInput}`, {
+        //                 comment: commentInput
+        //             })
+
+
+        //         document.querySelector(".previousComments").innerHTML +=
+        //             `<div class="commentbox">
+        //                     <h2 class="commentName">${nameInput}</h2>
+        //                     <p class="commentText">${commentInput}</p>
+
+        //                  </div>`;
+        //     } catch (error) {
+
+        //         console.log(error.data);
+
+        //         document.querySelector(".result").innerHTML =
+        //             "Error in getting weather data";
+
+        //     }
+
+
+        // });
+
+        // const getAllComment = async () =>{
+        //   const axioxResponse =   axios.get("/comment")
+
+        //   console.log(axiosResponse.data)
+
+        //   axioxResponse.data.map((eachComment) =>{
+        //     document.querySelector(".previousComments").innerHTML =
+        //             `<div class="commentbox">
+        //                     <h2 class="commentName">${nameInput}</h2>
+        //                     <p class="commentText">${commentInput}</p>
+
+        //                  </div>`;
+        //   })
+        // }
+
+
+        // setTimeout(() =>{
+
+        //     getAllComment()
+        // }, 100)
+
+    </script>
+</body>
+
+</html>
